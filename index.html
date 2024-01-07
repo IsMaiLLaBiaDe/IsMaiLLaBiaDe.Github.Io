@@ -77,7 +77,7 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="#Event" class="w3-bar-item w3-button" onclick="toggleFunction()">Events</a>
     <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    <a onclick ="Search()" class="w3-bar-item w3-button">SEARCH</a>
   </div>
 </div>
 
@@ -282,6 +282,11 @@ function toggleFunction() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+}
+</script>
+  <script>
+function Search() {
+  location.replace("https://www.google.com/search?q=ismail+labiade")
 }
 </script>
 
