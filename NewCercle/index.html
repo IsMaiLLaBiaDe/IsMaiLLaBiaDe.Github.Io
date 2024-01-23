@@ -13,7 +13,7 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
-  color: #fff;
+  color: 255,2,2;
   line-height: 1.8;
 }
 
@@ -76,20 +76,20 @@ body, html {
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="#Home" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
-    <a href="#About" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#Contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a onclick ="Search()" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
+    <a href="#Home" style="color: black;" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="#About" style="color: black;"  class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#Contact" style="color: black;"  class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a onclick ="Search()" style="color: black;"  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i style="color: black;"  class="fa fa-search"></i>
     </a>
 	
   </div>
 
   <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#About" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
-    <a href="#Contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
-    <a onclick ="Search()" class="w3-bar-item w3-button"> SEARCH</a>
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+    <a  style="color: black;"  href="#About" class="w3-bar-item w3-button" onclick="toggleFunction()"> ABOUT</a>
+    <a style="color: blck;"  href="#Contact" class="w3-bar-item w3-button" onclick="toggleFunction()"> CONTACT</a>
+    <a style="color: black;"  onclick ="Search()" class="w3-bar-item w3-button"> SEARCH</a>
   </div>
 </div>
 
@@ -126,58 +126,56 @@ body, html {
 </div>
    <!-- Cards-->
 
+
 </div>
 
-  
+  <center><div id="About"> <h1 style="padding: 40px;padding-bottom: 0px;">Here are some of the most common materials that can be recycled:</h1>
+
+    <i style="font-size:20px;">Paper<br>
+    Cardboard<br>
+    Glass<br>
+    Metal<br>
+    Plastic<br>
+    Electronics<br>
+    Textiles</i></div>
 
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
+
  
 <!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="Event">
+
 
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   
 
 <!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
 
 <!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimgg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
+
 
 <!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="Contact">
+
+<div class="w3-content w3-container w3-padding-0" id="Contact">
+
+ 
+
+  <div class="w3-row w3-padding-0 w3-section">
+    <!-- <div class="w3-col m4 w3-container"> -->
+      <!-- <img src="user.png" class="w3-image w3-round" style="width:100%"> -->
+    <!-- </div> -->
+    <div class="w3-col m w3-panel">
+      <div class="w3-large w3-margin-bottom">
+	   <center><span style="font-size:30px">CONTACT</span>
   <h3 class="w3-center">WHERE I WORK</h3>
   <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="../user.png" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-	    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: i4Lx8D@Gmail.Com<br>
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>  <br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +000000000 <br>
+	    <i class="w3-center fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: i4Lx8D@Gmail.Com<br>
+        <i class="w3-center fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Local<br>
+        <i class=" w3-center fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +000000000 <br>
      
       </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+      <p class="w3-center">Swing by for a cup of <i class="w3-center fa fa-coffee"></i>, or leave me a note:</p>
       <form action="/action_page.php" target="_blank">
         <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
           <div class="w3-half">
