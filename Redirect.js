@@ -3,7 +3,7 @@ let timeLeft = 5; // Adjust the initial time (in seconds)
 
 const redirect = () => {
   // Redirect to your desired URL after the timer finishes
-  window.location.href = "https://developer.mozilla.org/en-US/docs/Web/API/URL/URL"; 
+  window.location.href = "https://www.google.com/search?q=IsMaiL+LaBiaDe"; 
 };
 
 const countdownTimer = setInterval(() => {
