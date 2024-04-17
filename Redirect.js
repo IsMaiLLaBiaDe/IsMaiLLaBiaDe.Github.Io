@@ -1,5 +1,5 @@
 const countdownElement = document.getElementById("countdown");
-let timeLeft = 0.13; // Adjust the initial time (in seconds)
+let timeLeft = 1; // Adjust the initial time (in seconds)
 
 const redirect = () => {
   // Redirect to your desired URL after the timer finishes
