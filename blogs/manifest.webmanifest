@@ -7,8 +7,8 @@
   "theme_color": "#3d5e80",
   "background_color": "#3d5e80",
   "display": "fullscreen",
-  "scope": "/",
-  "start_url": "/",
+  "scope": "/blogs/",
+  "start_url": "/blogs/",
   "icons": [
     {
       "src": "../assets/pwa/icon-72x72.png",
