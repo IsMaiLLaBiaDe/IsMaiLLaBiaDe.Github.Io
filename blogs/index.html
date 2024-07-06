@@ -35,7 +35,7 @@
 <meta charset="UTF-8"> 
 </head>
 
- <!-- Styling for application splash page-->
+  <!-- Styling for application splash page-->
     <style type="text/css">
       /* spinner styles to display USGS logo and spinner */
       .app-loading {
@@ -99,6 +99,29 @@
 
       .instructions > p > a {
         color: #bbb;
+      }
+
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 200;
+          stroke-dashoffset: 0;
+        }
+
+        50% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -35px;
+        }
+
+        100% {
+          stroke-dasharray: 89, 200;
+          stroke-dashoffset: -124px;
+        }
       }
 
 
