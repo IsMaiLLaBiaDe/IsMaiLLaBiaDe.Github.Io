@@ -35,14 +35,14 @@
 <meta charset="UTF-8"> 
 </head>
 
-    <!-- Styling for application splash page-->
+ <!-- Styling for application splash page-->
     <style type="text/css">
       /* spinner styles to display USGS logo and spinner */
       .app-loading {
         align-items: center;
         display: none;
         flex-direction: column;
-        height: 100px;
+        height: 100%;
         justify-content: center;
         position: absolute;
         top: 0;
@@ -56,13 +56,13 @@
       }
 
       .app-loading > .logo {
-        width: 100px;
-        max-width: 100px;
+        width: 25%;
+        max-width: 300px;
       }
 
       .app-loading > .spinner {
-        height: 50px;
-        width: 50px;
+        height: 50vh;
+        width: 50vw;
         animation: rotate 2s linear infinite;
         transform-origin: center center;
         position: absolute;
@@ -82,13 +82,13 @@
       }
 
       .app-loading > .instructions {
-        background-color: #ffff;
+        background-color: #304a67;
         border-radius: 3px;
         bottom: 0;
         color: #fff;
         display: block;
         font-family: Helvetica, sans-serif;
-        font-size: 0.80em;
+        font-size: 0.88em;
         left: 0;
         line-height: 1.5;
         margin: 1em;
@@ -98,9 +98,8 @@
       }
 
       .instructions > p > a {
-        color: #fff;
+        color: #bbb;
       }
-
 
 
 </style>
