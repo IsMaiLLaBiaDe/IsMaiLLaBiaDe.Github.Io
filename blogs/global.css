@@ -1,0 +1,218 @@
+#home-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgb(246, 155, 155); */
+}
+
+.tool {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (orientation: portrait) and (max-width: 620px) {
+  .tool {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tool .tool-item {
+  will-change: transform, box-shadow;
+  width: 280px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+  margin: 40px 10px 40px;
+  background-color: #fff;
+  box-shadow: 0px 0px 1px rgba(246, 155, 155, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  /* transform: translateY(0px);*/
+  transition: 0.3s cubic-bezier(0, 0.11, 0.58, 0.83);
+}
+
+.tool .tool-item:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
+  /* transform: translateY(-4px);*/
+  /* transition: 0.4s ease;  */
+}
+
+.tool .tool-item .tool-item-top {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  /* margin-bottom: 10px; */
+  /* background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  ); */
+}
+
+.tool .tool-item .tool-item-top > img {
+  width: 40px;
+  height: 40px;
+  padding: 5px 5px 5px 5px;
+  box-shadow: 0px 0px 1px rgba(100, 100, 100, 0.5);
+  border-radius: 8px;
+}
+
+.tool .tool-item .tool-item-top > h3 {
+  margin: 0 0 0 5px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.tool .tool-item > p {
+  /* max-height: 125px; */
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
+  font-size: 12px;
+  padding: 0 12px;
+  line-height: 18px;
+}
+
+.tool .tool-item .tool-item-title {
+  height: 60px;
+  overflow: hidden;
+  padding: 0 12px 12px;
+}
+
+.tool .tool-item .tool-item-title > h3 {
+  margin-left: 0;
+}
+
+.tool .tool-item .tool-item-tags {
+  padding: 0 12px 12px 0;
+}
+
+.tool .tool-item .tool-item-tags > div {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  font-size: 12px;
+  line-height: 18px;
+  overflow: hidden;
+}
+
+.tool .tool-item .tool-item-tags .tag {
+  display: inline-block;
+  border-radius: 0 0 5px 5px;
+  padding: 3px 8px;
+  background-color: #f2ebf9;
+  color: #7e3fca;
+}
+
+.tool .tool-item .tool-item-tags .tag:first-child {
+  border-radius: 0px 0 9px 0px;
+}
+
+.tool .tool-item .tool-item-tags .tag:nth-of-type(2) {
+  background-color: #f6e7e6;
+  color: #f06060;
+}
+
+.tool .tool-item .tool-item-tags .tag:nth-of-type(3) {
+  background-color: #fbf2eb;
+  color: #d87d41;
+}
+
+.tool .tool-item .tool-item-description {
+  padding: 0 12px 12px;
+}
+
+.tool .tool-item .tool-item-description > p {
+  font-size: 12px;
+  height: 84px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4 !important;
+  line-height: 20px;
+}
+
+.tool-item-time {
+  padding: 0 12px 12px;
+  color: #979797;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 箭头移动 */
+.circle-button {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  background-color: #ffffff;
+  border: 1px solid #f2ebf9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.circle-button .arrow1,
+.circle-button .arrow2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: opacity 0.5s ease,
+    transform 0.5s cubic-bezier(0, 0.32, 0.41, 1.06);
+}
+
+.circle-button .arrow1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.circle-button .arrow2 {
+  opacity: 0;
+  transform: translateX(-20px);
+}
+
+.tool-item:hover .circle-button .arrow1 {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.tool-item:hover .circle-button .arrow2 {
+  opacity: 1;
+  transform: translateX(0);
+  background-color: #fbdede;
+  color: #fff;
+}
+
+.tool-item:not(:hover) .circle-button .arrow1 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.tool-item:not(:hover) .circle-button .arrow2 {
+  opacity: 0;
+  transform: translateX(-20px);
+  background-color: #fbdede;
+  color: #fff;
+}
