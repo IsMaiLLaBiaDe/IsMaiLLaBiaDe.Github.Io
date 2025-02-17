@@ -60,6 +60,16 @@
   ); */
 }
 
+.tool .tool-item .tool-item-top {
+  /*display: flex;*/
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px;
+  margin-bottom: 10px;
+  background-image: linear-gradient( 45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100% );
+}
+
 .tool .tool-item .tool-item-top > img {
   width: 40px;
   height: 40px;
