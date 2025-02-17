@@ -91,6 +91,11 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  resize: both; /* Allows resizing both horizontally and vertically */
+  overflow: auto; /* Required for resize to work */
 }
 
 @media screen and (orientation: portrait) and (max-width: 620px) {
