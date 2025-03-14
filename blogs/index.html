@@ -351,7 +351,6 @@ h3{
         stroke: #000;
       }
 
-
 .site-header {
   color: black;
   font-size:50px;
@@ -359,13 +358,14 @@ h3{
   padding: 5px;
 }
 
-@media only screen and (min-width: 600px) {
- .site-header {
+@media only screen and (max-width: 600px) {
+ .hd {
   color: black;
-  font-size:100px
+  font-size:100px;
   opacity: 100%;
   padding: 20px;
-}}
+}
+}
 
 	    
 .tool .tool-item .tool-item-title {
@@ -483,7 +483,7 @@ h3{
 
 <header class="site-header">
         <div>
-         <center> <p>Blogs</p> </center>
+         <center> <p id="hd">Blogs</p> </center>
         </div>
     </header>
 </div>
