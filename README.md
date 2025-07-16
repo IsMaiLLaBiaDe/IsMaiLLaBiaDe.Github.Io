@@ -40,5 +40,7 @@ Or individual badges:
 [![Twitter](https://img.shields.io/badge/twitter-%231DA1F2.svg?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/IsMaiLLaBiaDe)
 ### 📈 Profile Views
 
+![Cool GIF](https://ismaillabiade.github.io/IsMaiLLaBiaDe/assets/a.gif)
+
 
 Public chmod 443 + 1
