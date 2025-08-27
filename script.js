@@ -1,8 +1,10 @@
 // Définir la date cible
 const dateCible = new Date('2026-03-25 00:00:00'); // Exemple : 31 décembre 2024, 23h59min59s
+const date_Cible = new Date('2101-03-25 00:00:00'); // Exemple : 31 décembre 2024, 23h59min59s
 
 // Sélectionner l'élément HTML
 const countdownElement = document.getElementById('countdown');
+const countdownElement = document.getElementById('count_down');
 
 // Mettre à jour le countdown toutes les secondes
 setInterval(() => {
@@ -17,5 +19,7 @@ setInterval(() => {
 
  // Afficher le countdown
  countdownElement.textContent = `Temps restant : ${jours} jours, ${heures} heures, ${minutes} minutes et ${secondes} secondes`;
+}, 1000);
+count_downElement.textContent = `Temps restant : ${jours} jours, ${heures} heures, ${minutes} minutes et ${secondes} secondes`;
 }, 1000);
 
