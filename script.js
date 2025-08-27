@@ -9,7 +9,9 @@ const countdown_Element = document.getElementById('count_down');
 // Mettre à jour le countdown toutes les secondes
 setInterval(() => {
  const maintenant = new Date();
+ const maint_enant = new Date();
  const tempsRestant = dateCible.getTime() - maintenant.getTime();
+ const temps_Restant = date_Cible.getTime() - maint_enant.getTime();
 
  // Calculer les jours, heures, minutes et secondes restantes
  const jours = Math.floor(tempsRestant / (1000 * 60 * 60 * 24));
@@ -17,9 +19,16 @@ setInterval(() => {
  const minutes = Math.floor((tempsRestant % (1000 * 60 * 60)) / (1000 * 60));
  const secondes = Math.floor((tempsRestant % (1000 * 60)) / 1000);
 
+  // Calculer les jours, heures, minutes et secondes restantes
+ const j_ours = Math.floor(temps_Restant / (1000 * 60 * 60 * 24));
+ const h_eures = Math.floor((temps_Restant % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+ const m_inutes = Math.floor((temps_Restant % (1000 * 60 * 60)) / (1000 * 60));
+ const s_econdes = Math.floor((temps_Restant % (1000 * 60)) / 1000);
+
  // Afficher le countdown
- countdown_Element.textContent = `Temps restant : ${jours} jours, ${heures} heures, ${minutes} minutes et ${secondes} secondes`;
+ countdown_Element.textContent = `Temps restant : ${j_ours} jours, ${h_eures} heures, ${m_inutes} minutes et ${s_econdes} secondes`;
  countdownElement.textContent = `Temps restant : ${jours} jours, ${heures} heures, ${minutes} minutes et ${secondes} secondes`; }, 1000);
+
 
 
 
