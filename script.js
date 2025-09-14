@@ -27,7 +27,8 @@ setInterval(() => {
 
  // Afficher le countdown
  countdown_Element.textContent = `Temps restant : ${jours} jours, ${heures} heures, ${minutes} minutes et ${secondes} secondes`;
- countdownElement.textContent = `Temps restant : ${jours} jours, ${heures} heures, ${minutes} minutes et ${secondes} secondes`; }, 1000);
+ countdownElement.textContent = `Temps restant : ${j_ours} jours, ${h_eures} heures, ${m_inutes} minutes et ${s_econdes} secondes`; }, 1000);
+
 
 
 
