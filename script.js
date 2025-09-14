@@ -45,6 +45,84 @@ setInterval(() => {
 
 
 
+// Définir la date cible
+const dates = [
+  new Date('2026-03-25T00:00:00'),
+  new Date('2027-03-25T00:00:00'),
+  new Date('2028-03-25T00:00:00'),
+  new Date('2029-03-25T00:00:00'),
+  new Date('2030-03-25T00:00:00'),
+  new Date('2101-03-25T00:00:00')
+];
+
+// Sélectionner l'élément HTML
+const countdownElements = [
+  document.getElementById('countdown'),
+  document.getElementById('countd_own'),
+  document.getElementById('count_down')
+];
+
+
+// Mettre à jour le countdown toutes les secondes
+setInterval(() => {
+ 
+ 
+const tempsRestant = [
+  dates[0].getTime() - new Date().getTime(),
+  dates[1].getTime() - new Date().getTime(),
+  dates[2].getTime() - new Date().getTime(),
+  dates[3].getTime() - new Date().getTime(),
+];
+
+
+const jours = [
+  Math.floor(tempsRestant[0] / (1000 * 60 * 60 * 24)),
+  Math.floor(tempsRestant[1] / (1000 * 60 * 60 * 24)),
+  Math.floor(tempsRestant[2] / (1000 * 60 * 60 * 24)),
+  Math.floor(tempsRestant[3] / (1000 * 60 * 60 * 24))
+];
+
+
+const heures = [
+  Math.floor((tempsRestant[0] % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  Math.floor((tempsRestant[1] % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  Math.floor((tempsRestant[2] % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  Math.floor((tempsRestant[3] % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  Math.floor((tempsRestant[3] % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+];
+
+
+const minutes = [
+  Math.floor((tempsRestant[0] % (1000 * 60 * 60)) / (1000 * 60)),
+  Math.floor((tempsRestant[1] % (1000 * 60 * 60)) / (1000 * 60)),
+  Math.floor((tempsRestant[2] % (1000 * 60 * 60)) / (1000 * 60)),
+  Math.floor((tempsRestant[3] % (1000 * 60 * 60)) / (1000 * 60)),
+];
+
+const secondes = [
+  Math.floor((tempsRestant[0] % (1000 * 60)) / 1000),
+  Math.floor((tempsRestant[1] % (1000 * 60)) / 1000),
+  Math.floor((tempsRestant[2] % (1000 * 60)) / 1000),
+  Math.floor((tempsRestant[3] % (1000 * 60)) / 1000),
+];
+
+
+
+ // Afficher le countdown
+ 
+
+ countdownElements[0].textContent = `Temps restant : ${jours [0] } jours, ${heures [0] } heures, ${minutes [0] } minutes et ${secondes [0]} secondes`;
+ countdownElements[1].textContent = `Temps restant : ${jours [1] } jours, ${heures [1] } heures, ${minutes [1] } minutes et ${secondes [1]} secondes`;
+ countdownElements[2].textContent = `Temps restant : ${jours [2] } jours, ${heures [2] } heures, ${minutes [2] } minutes et ${secondes [2]} secondes`;}, 1000);
+
+
+
+
+
+
+
+
+
 
 
 
