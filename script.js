@@ -57,9 +57,9 @@ const dates = [
 
 // Sélectionner l'élément HTML
 const countdownElements = [
-  document.getElementById('countdown'),
-  document.getElementById('countd_own'),
-  document.getElementById('count_down')
+  document.getElementById('rcountdown'),
+  document.getElementById('rcountd_own'),
+  document.getElementById('rcount_down')
 ];
 
 
@@ -114,6 +114,7 @@ const secondes = [
  countdownElements[0].textContent = `Temps restant : ${jours [0] } jours, ${heures [0] } heures, ${minutes [0] } minutes et ${secondes [0]} secondes`;
  countdownElements[1].textContent = `Temps restant : ${jours [1] } jours, ${heures [1] } heures, ${minutes [1] } minutes et ${secondes [1]} secondes`;
  countdownElements[2].textContent = `Temps restant : ${jours [2] } jours, ${heures [2] } heures, ${minutes [2] } minutes et ${secondes [2]} secondes`;}, 1000);
+
 
 
 
